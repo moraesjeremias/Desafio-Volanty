@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Circular';
+    src: url('/volanty/src/fonts/lineto-circular-black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Saira';
+    src: url('/volanty/src/fonts/Saira-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-family: 'Circular';
+    font-weight: 900;
+    font-size: 3em;
+    padding: 2%;    
+}
+
+.svg-car{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;  
+}
+.volanty-car{
+    height: 50%;
+    width: 90%;
+    position: relative;
+}
+
+.description{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: justify;
+    padding: 4%;
+}
+
+p {
+    font-family: 'Saira';
+    font-weight: 500;
+    font-size: 1.5em;
+}
