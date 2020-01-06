@@ -5,13 +5,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Saira';
-    src: url('/volanty/src/fonts/Saira-Regular.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-
 .container{
     display: flex;
     flex-direction: column;
