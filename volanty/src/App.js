@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import './styles.css';
 import VolantyHeader from './components/header';

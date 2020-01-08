@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './styles.css';
 
 const Footer = () => (
@@ -30,7 +30,7 @@ const Footer = () => (
                                 <li><a href="http://blog.volanty.com/" title="Blog Volanty">Blog Volanty</a></li>
                                 <li><a href="https://volanty.abler.com.br/" title="Trabalhe com a gente">Trabalhe com a gente</a></li>
                                 <li><a href="https://www.volanty.com/politica-de-privacidade.html" title="Política de privacidade">Política de privacidade</a></li>
-                                <li><a href="/termos-de-uso" title="Termos de uso" class="">Termos de Uso</a></li></ul></div> <div class="footer-description">
+                                <li><a href="/termos-de-uso" title="Termos de uso">Termos de Uso</a></li></ul></div> <div className="footer-description">
                                 <p>® Volanty Tecnologia e Serviços Veiculares Ltda. CNPJ: 26.361.463/0001-72</p>
                     </div>
                 </div>
