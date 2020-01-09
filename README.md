@@ -29,7 +29,7 @@ $ npm install
 $ npm start
 ```
 
-#### Yearn
+#### Yarn
 
 ```sh
 $ yarn install
