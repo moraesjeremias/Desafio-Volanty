@@ -1,13 +1,13 @@
 import React from 'react';
 import './styles.css';
-import logo from './volanty-logo.png';
+import logo from '../../assets/img/volanty-logo.png';
 
 
-const VolantyHeader = () => (
+const Header = () => (
     <div className="volanty-header">
         <img src={logo} alt="volanty-logo" className="volanty-logo"></img>
     </div>
 );
 
 
-export default VolantyHeader;
+export default Header;
