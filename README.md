@@ -24,12 +24,14 @@ $ npm install
 $ npm start
 ```
 
-# Tecnologias e Aplicação
+# Tecnologias e Milestones
 
 #### :white_check_mark: Mobile
 #### :white_check_mark: Consume Fipe API
 #### :white_check_mark: ReactJS
 #### :white_check_mark: Axios
+#### :white_check_mark: Bootstrap
+#### :x: Unit Tests (work in progress)
 
 
 # Deploy/Production
