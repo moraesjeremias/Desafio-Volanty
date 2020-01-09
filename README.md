@@ -6,7 +6,10 @@ Aplicação de consulta à Tabela FIPE por meio de uma API pública na qual o cl
 
 # API
 As instruções de utilização da API são encontradas em:
-https://leonardodavila-price-api.glitch.me
+https://github.com/leonardodavila/price-api
+
+#### API consumida:
+https://volanty-price-api.herokuapp.com/
  
 
 ## Instalação

@@ -51,7 +51,6 @@ export default function Cards() {
       period = makeModelYear
       API.getVersions(makers, automob, makeModelYear).then(response =>{
         setVersion(response.data);
-        // console.log(years);
         setCar({});
       })
     }
@@ -60,10 +59,37 @@ export default function Cards() {
 
       API.getCar(makers, automob, period, makeModelYearVersion).then(response => {
         setCar(response.data);
-        // console.log(versions);
+        console.log(versions);
       })
     };
+
+    function currenzialize (value) {
+        let formated = parseFloat(value)
+              .toFixed(2)
+              .toString()
+              .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        let [int, decimal] = formated.split('.');
+        let newformated = `${int.replace(',', '.')},${decimal}`;
+
+        if (isFloat(newformated)) {
+          return newformated;
+          } else {
+            return 0;
+          }
+    }
+
+    function isFloat(value) {
+      var f = parseFloat(value);
+      var floor = Math.floor(f);
+      var fraction = f - floor;
+      if (fraction > 0) {
+        return true;
+      }
+      return false;
+    }
+
   
+
     return(
               <div className="card-columns-vol">
                 <div className="card mb-3" >
@@ -98,39 +124,21 @@ export default function Cards() {
                             <select className="form-control" id="version" onChange={e => loadCar(e.target.value)}>
                               <option>Versão</option>
                               {versions.map((version, idx) => (
-                                <option key={idx} value={version.versionID}>{version.version}</option>
+                                <option key={idx} value={version.versionId}>{version.version}</option>
                               ))}
                             </select>
                         </form>
                           <p>Preço</p>
-                          <p>{car.percoMedio}</p>
+                          <p>R${currenzialize(car.pisoPrecoMedioVolanty) || 0}</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                  {/* <div className="button-component">
-                      <Button onClick={
-                        <div className="card-columns">
-                        <div className="card mb-3" >
-                          <div className="row no-gutters">
-                            <div className="col-md-8">
-                              <div className="card-body">
-                                <p>Marca</p>
-                                <p>{car.brand}</p>
-                                <p>Modelo</p>
-                                <p>{car.model}</p>
-                                <p>Ano</p>
-                                <p>{car.modelYear}</p>
-                                <p>Preço</p>
-                                <p>{car.pisoPrecoMedioVolanty}</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        </div>  
-                      }/>
+                  {/* <div className="button-component" onClick={ButtonClick}>
+                      <Button />
                   </div> */}
               </div> 
+              
     
                             
     )
