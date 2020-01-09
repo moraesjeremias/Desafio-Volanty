@@ -19,9 +19,18 @@ $ git clone https://github.com/moraesjeremias/Desafio-Volanty.git
 
 Instale as dependências e inicie o projeto:
 
+#### NPM
+
 ```sh
 $ npm install
 $ npm start
+```
+
+#### Yearn
+
+```sh
+$ yarn install
+$ yarn start
 ```
 
 # Tecnologias e Milestones
