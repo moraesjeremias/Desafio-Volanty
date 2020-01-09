@@ -1,12 +1,13 @@
 .volanty-button {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10%;
+    margin-top: 5%;
 }
 
 button{
     font-family: 'Saira';
     border-radius: 30px!important;
-    width: 70%;
+    width: 100%;
 }

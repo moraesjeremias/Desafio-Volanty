@@ -20,7 +20,8 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center;  
+    align-content: center; 
+    margin-top: 10%; 
 }
 .volanty-car{
     height: 50%;
@@ -33,11 +34,34 @@ h1{
     align-content: center;
     justify-content: center;
     text-align: justify;
-    padding: 4%;
+    margin-top: 10%;
+    padding: 5%;
 }
 
 p {
     font-family: 'Saira';
     font-weight: 500;
     font-size: 1.5em;
+}
+
+@media only screen and (min-width: 1200px){
+    
+    .container{
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 5em;
+        padding: 0;
+        margin-left: -20%;
+    }
+
+    .svg-car{
+        margin-top: 0;
+    }
+    .volanty-car{
+        width: 60%;
+        margin-left: 30%;
+        
+    }
 }

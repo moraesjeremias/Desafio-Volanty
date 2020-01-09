@@ -16,7 +16,7 @@ export default function Cards() {
     const [models, setModels] = useState([]);
     const [years, setYears] = useState([]);
     const [versions, setVersion] = useState([]);
-    const [car, setCar] = useState([]);
+    const [car, setCar] = useState({});
 
     useEffect(() => {
       function loadMakes() {
@@ -51,20 +51,22 @@ export default function Cards() {
       period = makeModelYear
       API.getVersions(makers, automob, makeModelYear).then(response =>{
         setVersion(response.data);
-        setCar({})
+        // console.log(years);
+        setCar({});
       })
     }
     
     function loadCar (makeModelYearVersion){
 
       API.getCar(makers, automob, period, makeModelYearVersion).then(response => {
-        setCar(response.data)
+        setCar(response.data);
+        // console.log(versions);
       })
     };
-
+  
     return(
-      <div className="card-columns">
-                 <div className="card mb-3" >
+              <div className="card-columns-vol">
+                <div className="card mb-3" >
                   <div className="row no-gutters">
                     <div className="col-md-8">
                       <div className="card-body">
@@ -99,13 +101,37 @@ export default function Cards() {
                                 <option key={idx} value={version.versionID}>{version.version}</option>
                               ))}
                             </select>
-                            </form>
+                        </form>
+                          <p>Preço</p>
+                          <p>{car.percoMedio}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  {/* <div className="button-component">
+                      <Button onClick={
+                        <div className="card-columns">
+                        <div className="card mb-3" >
+                          <div className="row no-gutters">
+                            <div className="col-md-8">
+                              <div className="card-body">
+                                <p>Marca</p>
+                                <p>{car.brand}</p>
+                                <p>Modelo</p>
+                                <p>{car.model}</p>
+                                <p>Ano</p>
+                                <p>{car.modelYear}</p>
+                                <p>Preço</p>
+                                <p>{car.pisoPrecoMedioVolanty}</p>
+                              </div>
                             </div>
-                            </div>
-                            </div>
-                            </div>
-                            </div> 
-                            
+                          </div>
+                        </div>
+                        </div>  
+                      }/>
+                  </div> */}
+              </div> 
+    
                             
     )
 

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const api = axios.create({ baseURL: 'https://cors-anywhere.herokuapp.com/https://leonardodavila-price-api.glitch.me/'});
+const api = axios.create({ baseURL: 'https://volanty-price-api.herokuapp.com/'});
 
 const getMakes = async () => {
     const response = await api.get(`/brands`)

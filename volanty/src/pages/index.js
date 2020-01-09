@@ -3,7 +3,7 @@ import React from 'react';
 import Header from '../components/header';
 import Description from '../components/description';
 import Cards from '../components/product';
-import Button from '../components/button';
+// import Button from '../components/button';
 import Footer from '../components/footer';
 
 const Home = () => (
@@ -11,7 +11,7 @@ const Home = () => (
       <Header />
       <Description />
       <Cards />
-      <Button />
+      {/* <Button /> */}
       <Footer />
     </div>
 );
