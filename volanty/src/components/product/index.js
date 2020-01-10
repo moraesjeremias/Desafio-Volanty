@@ -1,8 +1,6 @@
 import React, { useState, useEffect  } from 'react';
 import './styles.css';
 import API from '../../services/api';
-import Button from '../button';
-
 
 let makers = '';
 let automob = '';
@@ -86,9 +84,7 @@ export default function Cards() {
         return true;
       }
       return false;
-    }
-
-  
+    }    
 
     return(
               <div className="card-columns-vol">
@@ -128,19 +124,13 @@ export default function Cards() {
                               ))}
                             </select>
                         </form>
-                          <p>Preço</p>
+                          <p>Meu Carro Vale</p>
                           <p>R${currenzialize(car.pisoPrecoMedioVolanty) || 0}</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                  {/* <div className="button-component" onClick={ButtonClick}>
-                      <Button />
-                  </div> */}
-              </div> 
-              
-    
-                            
+              </div>                        
     )
 
 }

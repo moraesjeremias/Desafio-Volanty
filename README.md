@@ -47,4 +47,4 @@ $ yarn start
 
 
 # Deploy/Production
-#### (work in progress)
+<img src="https://assets.zabbix.com/img/brands/aws_s3.svg" width="50" height="50"> http://www.desafio-volanty.com.s3-website-us-east-1.amazonaws.com/
