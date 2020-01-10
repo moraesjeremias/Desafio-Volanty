@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Circular';
+    src: url('../../fonts/lineto-circular-black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-family: 'Circular';
+    font-weight: 900;
+    font-size: 3em;
+    padding: 2%;    
+}
+
+.svg-car{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center; 
+    margin-top: 10%; 
+}
+.volanty-car{
+    height: 50%;
+    width: 90%;
+    position: relative;
+}
+
+.description{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: justify;
+    margin-top: 10%;
+}
+
+p {
+    font-family: 'Saira';
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+@media only screen and (min-width: 320px){
+    
+    .description{
+        padding: 5%;
+    }
+    
+}
+@media only screen and (min-width: 540px){
+    
+    .description{
+        padding: 5%;
+    }
+    
+}
+@media only screen and (min-width: 768px){
+    
+    .svg-car{
+        width: 50%;
+        margin-top: 0;
+        margin-left: 20%;
+    }
+    .volanty-car{
+        width: 100%;
+    }
+    .description{
+        margin-top: 0;
+    }
+    
+}
+
+@media only screen and (min-width: 1280px){
+    
+    .container{
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 4em;
+        padding: 0;
+    }
+
+    .svg-car{
+        margin-top: 0;
+    }
+    .volanty-car{
+        width: 80%;
+        margin-left: 30%;
+        
+    }
+}
+
+@media only screen and (min-width: 1920px){
+    .svg-car{
+        
+    }
+    .volanty-car{
+        width: 100%;
+    }
+    
+}
