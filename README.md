@@ -47,7 +47,7 @@ $ yarn start
 
 
 # Deploy/Production
-<img src="https://assets.zabbix.com/img/brands/aws_s3.svg" width="30" height="30" alt="AWS S3"> Amazon Web Services S3
+<img src="https://assets.zabbix.com/img/brands/aws_s3.svg" width="30" height="30" alt="AWS S3"> <p><b>Amazon Web Services S3</b></p>
 
 
 http://www.desafio-volanty.com.s3-website-us-east-1.amazonaws.com/
