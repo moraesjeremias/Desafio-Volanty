@@ -6205,6 +6205,15 @@ a.mdc-list-item {
   font-size: 20px;
   font-weight: 600;
 }
+@media (min-width: 320px) and (max-width: 380px){
+  .footer-container{
+    flex-direction: row;
+  }
+  .footer-description{
+    padding-top: 2%;
+  }
+}
+
 @media (min-width: 768px) {
   .footer-container {
     flex-direction: row;

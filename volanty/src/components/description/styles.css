@@ -35,7 +35,6 @@ h1{
     justify-content: center;
     text-align: justify;
     margin-top: 10%;
-    padding: 5%;
 }
 
 p {
@@ -44,24 +43,63 @@ p {
     font-size: 1.5em;
 }
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 320px){
+    
+    .description{
+        padding: 5%;
+    }
+    
+}
+@media only screen and (min-width: 540px){
+    
+    .description{
+        padding: 5%;
+    }
+    
+}
+@media only screen and (min-width: 768px){
+    
+    .svg-car{
+        width: 50%;
+        margin-top: 0;
+        margin-left: 20%;
+    }
+    .volanty-car{
+        width: 100%;
+    }
+    .description{
+        margin-top: 0;
+    }
+    
+}
+
+@media only screen and (min-width: 1280px){
     
     .container{
         width: 100%;
     }
     
     h1 {
-        font-size: 5em;
+        font-size: 4em;
         padding: 0;
-        margin-left: -20%;
     }
 
     .svg-car{
         margin-top: 0;
     }
     .volanty-car{
-        width: 60%;
+        width: 80%;
         margin-left: 30%;
         
     }
+}
+
+@media only screen and (min-width: 1920px){
+    .svg-car{
+        
+    }
+    .volanty-car{
+        width: 100%;
+    }
+    
 }
